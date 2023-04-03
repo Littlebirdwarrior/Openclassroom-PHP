@@ -22,7 +22,7 @@
             <p>
                <?=nl2br(htmlspecialchars($post['content']));// On affiche le contenu du billet
                ?><br />
-               <em><a href="post.php?id=<?= urlencode($post['identifier']) ?>">Commentaires</a></em>
+               <em><a href="index.php?action=post&id<?= urlencode($post['identifier']) ?>">Commentaires</a></em>
             </p>
          </div>
          <?php
